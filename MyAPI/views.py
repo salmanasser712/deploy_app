@@ -44,13 +44,13 @@ def get_request(request):
     if request.method == 'POST':
         form = ApprovalForm(request.POST)
         if form.is_valid():
-                LP_CustomerPrincipalPayments = form.cleaned_data['LP_CustomerPrincipalPayments']
-                LoanMonthsSinceOrigination = form.cleaned_data['LoanMonthsSinceOrigination']
-                LP_CustomerPayments = form.cleaned_data['LP_CustomerPayments']
-                EmploymentStatus_Full_time = form.cleaned_data['EmploymentStatus_Full_time']
+                Customer_Principal_Payments = form.cleaned_data['Customer_Principal_Payments']
+                Loan_Months_Since_Origination = form.cleaned_data['Loan_Months_Since_Origination']
+                Customer_Payments = form.cleaned_data['Customer_Payments']
+                Employment_Status_Full_time = form.cleaned_data['Employment_Status_Full_time']
                 Investors = form.cleaned_data['Investors']
-                MonthlyLoanPayment = form.cleaned_data['MonthlyLoanPayment']
-                LoanOriginalAmount = form.cleaned_data['LoanOriginalAmount']
+                Monthly_Loan_Payment = form.cleaned_data['Monthly_Loan_Payment']
+                Loan_Original_Amount = form.cleaned_data['Loan_Original_Amount']
         
                 
                 mydict = (request.POST).dict()
