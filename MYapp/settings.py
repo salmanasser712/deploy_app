@@ -32,7 +32,7 @@ DEBUG = True
 
 STATIC_URL = '/static/'
 
-ALLOWED_HOSTS = ['https://dtdeploy.herokuapp.com/', '*']
+ALLOWED_HOSTS = ['https://deployapp7.herokuapp.com/', '*']
 
 
 # Application definition
